@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/framwork.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <title>Settings</title>
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="sidebar p-relative p-20 bg-white">
+      <h3 class="text-center mb-20  p-relative">Hany</h3>
+      <ul class="">
+        <li>
+          <a href="index.html" class=" d-flex align-items-center  font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-chart-bar fa-fw mr-10"></i>
+            <span class="">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="setting.html" class="active d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-gear fa-fw mr-10"></i>
+            <span class="">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="Profile.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-user fa-fw  mr-10"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="project.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i>
+            <span class="">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-circle-user fa-fw mr-10"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-credit-card fa-fw mr-10"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="Files.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-file fa-fw mr-10"></i>
+            <span>Files</span>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+    <div class="content w-full">
+      <!-- start head -->
+      <div class="head bg-white p-15 d-flex justify-content-between">
+        <div class="search p-relative">
+          <input type="search" class="radius-10 p-10 font-14" placeholder="Type A keyword" />
+        </div>
+        <div class="icon d-flex align-items-center justify-content-between">
+          <span class="p-relative mr-15 font-15">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="imgs/avatar.png" alt="" />
+        </div>
+      </div>
+      <!-- end head -->
+      <h1 class="p-relative ml-30 mt-20 ">Settings</h1>
+      <!-- start category -->
+      <div class="catego d-grid gap-20 mt-30 mb-10 p-20">
+        <!-- start site control -->
+        <div class="site-control radius-10 bg-white p-20">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25">Site-Control</h3>
+            <p class="text-grey mt-15 capitalize font-18">
+              control the website if there is maintenance
+            </p>
+          </div>
+          <div class="info mt-20 mb-20 d-flex align-items-center  justify-content-between ">
+            <div>
+              <p class="mb-10">Website Control</p>
+              <p class="text-grey capitalize ">open/close website and type the reason</p>
+            </div>
+            <div class="switch active">
+            </div>
+          </div>
+          <textarea class="resize-none w-full p-10 text-grey  border-none radius-10" placeholder="Close Message Content"
+            cols="30" rows="8"></textarea>
+        </div>
+        <!-- end site control -->
+
+        <!-- start general info -->
+        <div class="general-info  radius-10 bg-white p-20">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25"> General Info</h3>
+            <p class="text-grey mt-15 capitalize font-18">
+              general information about your account
+            </p>
+          </div>
+          <div class="form pt-10">
+            <div class="mt-10 mb-10">
+              <label class="d-block text-grey" for="name">First Name</label>
+              <input type="text" placeholder="First Name" class="radius-6 input mt-5 w-full ">
+            </div>
+            <div class="mt-20 mb-10">
+              <label class="d-block text-grey" for="name">Last Name</label>
+              <input type="text" placeholder="Last Name" class="radius-6 input mt-5 w-full ">
+            </div>
+            <label class="d-block mt-20 text-grey" for="name">Email </label>
+            <div class="d-flex align-items-center">
+              <div class="  flex-1">
+                <input type="email" placeholder="ex@gmail.com" class="radius-6 input mt-5 w-full "
+                  style="background-color: #f0f4f8;" disabled>
+              </div>
+              <p class="text-blue mr-10 ml-10 p-10 pointer">Change</p>
+            </div>
+          </div>
+        </div>
+        <!-- end general info -->
+        <!-- start security info -->
+        <div class="security-info bg-white p-20 radius-10 security">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25"> Security Info</h3>
+            <p class="text-grey mt-15 capitalize font-18">
+              general information about your account
+            </p>
+          </div>
+
+          <div class="sec-info d-flex justify-content-between align-items-center">
+            <div>
+              <p class="mb-10  font-18">Password</p>
+              <p class="text-grey font-15">Last Change On 12/2/2003</p>
+            </div>
+            <div class="btn bg-blue text-white  font-bold pointer">
+              Change
+            </div>
+          </div>
+
+          <div class="sec-info d-flex justify-content-between align-items-center">
+            <div>
+              <p class="mb-10 font-18">Two-Factor Authentication</p>
+              <p class="text-grey  font-15">Enable/Disable The Feature</p>
+            </div>
+            <div class="switch">
+            </div>
+          </div>
+          <div class="mt-15  d-flex justify-content-between align-items-center">
+            <div>
+              <p class="mb-10 font-18">Devices</p>
+              <p class="text-grey font-15">Check The Login Devicex list </p>
+            </div>
+            <div class="btn bg-eee pointer">Devices</div>
+          </div>
+
+        </div>
+        <!-- end security info -->
+        <!-- start social info -->
+        <div class="social-info  radius-10 bg-white p-20">
+          <div class="intro mb-25">
+            <h3 class="font-bold font-25"> Social Info</h3>
+            <p class="text-grey mt-15 capitalize font-18">
+              Social media information
+            </p>
+          </div>
+          <div class="website mb-15  bg-f6 radius-6 d-flex align-items-center ">
+            <div class="icon">
+              <i class="fa-brands fa-twitter fa-1x text-grey p-10 "></i>
+            </div>
+            <p class="ml-10 text-grey">HanyMohamed</p>
+          </div>
+          <div class="website mb-15  bg-f6 radius-6 d-flex align-items-center ">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f center-flex text-grey p-10"></i>
+            </div>
+            <p class="ml-10 text-grey">HanyMohamed</p>
+          </div>
+          <div class="website mb-15  bg-f6 radius-6 d-flex align-items-center ">
+            <div class="icon">
+              <i class="fa-brands fa-linkedin fa-1x text-grey p-10 "></i>
+            </div>
+            <p class="ml-10 text-grey">HanyMohamed</p>
+          </div>
+          <div class="website   bg-f6 radius-6 d-flex align-items-center ">
+            <div class="icon">
+              <i class="fa-brands fa-youtube fa-1x text-grey p-10 "></i>
+            </div>
+            <p class="ml-10 text-grey">HanyMohamed</p>
+          </div>
+
+        </div>
+        <!-- end social info -->
+        <!-- start widgets control -->
+        <div class="widgets-control radius-10 bg-white p-20">
+          <div class="intro mb-15">
+            <h3 class="font-bold font-25"> Social Info</h3>
+            <p class="text-grey mt-15 capitalize font-18">
+              Social media information
+            </p>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="one" />
+            <label for="one">Quick Draft</label>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="two" checked />
+            <label for="two">Yearly Targets</label>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="three" />
+            <label for="three">Tickets Statistics</label>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="four" checked />
+            <label for="four">Latest News</label>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="five" />
+            <label for="five">Latest Tasks</label>
+          </div>
+          <div class="control d-flex  mb-15">
+            <input type="checkbox" id="six" checked />
+            <label for="six">Top Search Items</label>
+          </div>
+        </div>
+        <!-- end widgets control -->
+        <!-- start backup manager -->
+        <div class="backup-control radius-10 bg-white p-20">
+          <div class="intro mb-15">
+            <h3 class="font-bold font-25">Backup Manager</h3>
+            <p class="text-grey mt-15 capitalize font-15">
+              control backup time and location
+            </p>
+          </div>
+          <div class="date d-flex text-center mb-15">
+            <input type="radio" name="time" id="daily" checked />
+            <label for="daily">Daily</label>
+          </div>
+          <div class="date d-flex text-center mb-15">
+            <input type="radio" name="time" id="weakly" />
+            <label for="weakly">weekly</label>
+          </div>
+          <div class="date d-flex text-center mb-15">
+            <input type="radio" name="time" id="Monthly" />
+            <label for="Monthly">Monthly</label>
+          </div>
+
+          <div class="servers mobile-column mt-10 d-flex gap-10">
+            <input type="radio" name="backup" id="manage" checked>
+            <div class="server p-15  radius-6  ">
+              <label for="manage" class="pointer  d-block ">
+                <i class="fa-solid fa-server   pointer mb-10"></i>
+                Manage
+              </label>
+            </div>
+            <input type="radio" name="backup" id="zero">
+            <div class="server  p-15 radius-6  ">
+              <label for="zero" class="pointer  d-block ">
+                <i class="fa-solid fa-server pointer   mb-10"></i>
+                Zero
+              </label>
+            </div>
+            <input type="radio" name="backup" id="Sigma">
+            <div class="server  p-15  radius-6  ">
+              <label for="Sigma" class="pointer  d-block ">
+                <i class="fa-solid fa-server  pointer  mb-10"></i>
+                Sigma
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- end backup manager -->
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end category -->
+  <script src="js/toggle.js">
+
+  </script>
+</body>
+
+</html>

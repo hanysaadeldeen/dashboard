@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/framwork.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <title>dashboard</title>
+</head>
+
+<body>
+  <div class="page d-flex">
+    <!-- start sidebar -->
+    <div class="sidebar p-relative p-20 bg-white">
+      <h3 class="text-center mb-20  p-relative">Hany</h3>
+      <ul class="">
+        <li>
+          <a href="index.html" class="active d-flex align-items-center  font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-chart-bar fa-fw mr-10"></i>
+            <span class="">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="setting.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-gear fa-fw mr-10"></i>
+            <span class="">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="Profile.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-user fa-fw  mr-10"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="project.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i>
+            <span class="">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-circle-user fa-fw mr-10"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-credit-card fa-fw mr-10"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="files.html" class="d-flex align-items-center font-14 text-black radius-6 p-10">
+            <i class="fa-regular fa-file fa-fw mr-10"></i>
+            <span>Files</span>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+    <!--end sidebar  -->
+
+    <!-- start content -->
+    <div class="content w-full">
+      <!-- start head -->
+      <div class="head bg-white p-15 d-flex justify-content-between">
+        <div class="search p-relative">
+          <input type="search" class="radius-10 p-10 font-14" placeholder="Type A keyword" />
+        </div>
+        <div class="icon d-flex align-items-center justify-content-between">
+          <span class="p-relative mr-15 font-15">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="imgs/avatar.png" alt="" />
+        </div>
+      </div>
+      <!-- end head -->
+      <h1 class="p-relative ml-30 mt-20   ">Dashboard</h1>
+      <!-- start category -->
+      <!-- start category -->
+      <div class="catego d-grid gap-20 mt-30 mb-10 p-20">
+
+        <!-- start welcome -->
+        <div class="welcome radius-10 p-relative bg-white">
+          <div class="intro p-20 bg-eee d-flex justify-content-between">
+            <div class="mb-20 text-center-mobile">
+              <h2>Welcome</h2>
+              <p class="mt-10 text-grey font-bold">Project</p>
+            </div>
+            <img src="imgs/welcome.png " class="hide-mobile" alt="" />
+          </div>
+          <div class="img p-relative">
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+
+          <div class="info d-flex   text-center mt-20 p-20 justify-content-around">
+            <div>
+              <h3 class="mb-10">Hany mohamed</h3>
+              <p class="text-grey font-bold">Developer</p>
+            </div>
+            <div>
+              <h3 class="mb-10">80</h3>
+              <p class="text-grey font-bold">Projects</p>
+            </div>
+            <div>
+              <h3 class="mb-10">200$</h3>
+              <p class="text-grey font-bold">Earned</p>
+            </div>
+          </div>
+
+          <div class="welcome-port mb-20 mt-20 text-right pr-20 pt-20">
+            <a href="#profile" class="mb-20 btn bg-blue visite w-fit text-white">Profile</a>
+          </div>
+        </div>
+        <!-- end welcome -->
+
+        <!-- start quick -->
+        <div class="Quick radius-10 bg-white p-20">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25">Quick Draft</h3>
+            <p class="text-grey mt-15 capitalize font-20">
+              write a dreft for your ideas
+            </p>
+          </div>
+          <div class="mt-20 mb-20">
+            <input type="text" placeholder="Title"
+              class="d-flex w-full p-10 pl-15 pl- font-18 border-none radius-10 bg-eee" />
+          </div>
+          <textarea class="resize-none font-18 border-none pl-15 p-10 bg-eee w-full radius-10" name="" id=""
+            placeholder="Your Thought" cols="40" rows="8"></textarea>
+          <div class="profile mt-20 text-right pt-10 pb-20">
+            <a href="#profile" class="mb-20 btn bg-blue visite w-fit text-white">Save</a>
+          </div>
+        </div>
+        <!-- end quick -->
+
+        <!-- start target -->
+        <div class="target capitalize bg-white radius-10 p-20">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25">Yearly target</h3>
+            <p class="text-grey mt-15 capitalize font-20">
+              Target of the year
+            </p>
+          </div>
+
+          <div class="mt-20 mb-20 d-flex align-items-center">
+            <div class="icon blue text-blue d-flex align-items-center radius-6 mr-15 font-20 justify-content-center">
+              <i class="fa-solid fa-dollar-sign fa-lg text-blue"></i>
+            </div>
+
+            <div class="target-info blue w-full">
+              <p class="capitalize text-grey">money</p>
+              <p class="font-bold mt-10 font-20">$20.000</p>
+              <div class="p-relative mt-10 progress">
+                <span class="bg-blue p-absolute" style="width: 80%">
+                  <span class="text-center p-absolute bg-blue radius-6 font-bold text-white">80%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="mt-20 mb-20 d-flex align-items-center">
+            <div class="icon orange text-blue d-flex align-items-center radius-6 mr-15 font-20 justify-content-center">
+              <i class="fa-solid fa-code fa-lg text-orange"></i>
+            </div>
+            <div class="target-info orange w-full">
+              <p class="capitalize text-grey">Project</p>
+              <p class="font-bold mt-10 font-20">6</p>
+
+              <div class="p-relative mt-10 progress">
+                <span class="bg-orange p-absolute" style="width: 55%">
+                  <span class="text-center p-absolute bg-orange radius-6 font-bold text-white">55%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-20 mb-20 d-flex align-items-center">
+            <div class="icon green text-blue d-flex align-items-center radius-6 mr-15 font-20 justify-content-center">
+              <i class="fa-solid fa-user fa-lg text-green"></i>
+            </div>
+            <div class="target-info green w-full">
+              <p class="capitalize text-grey">team</p>
+              <p class="font-bold mt-10 font-20">3</p>
+
+              <div class="p-relative mt-10 progress">
+                <span class="bg-green p-absolute" style="width: 75%">
+                  <span class="text-center p-absolute bg-green radius-6 font-bold text-white">75%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end target -->
+
+        <!-- start tickets -->
+        <div class="tickets bg-white radius-10 p-20">
+          <div class="intro mb-10">
+            <h3 class="font-bold font-25 capitalize">tickets statstics</h3>
+            <p class="text-grey mt-15 capitalize font-20">
+              every thing about support tickets
+            </p>
+          </div>
+          <div class="ticket-card d-flex gap-20 flex-wrap">
+            <div class="capitalize box text-center p-20 radius-10">
+              <i class="fa-regular fa-rectangle-list fa-2x mb-10 text-orange"></i>
+              <div class="font-20 font-bold mt-5 mb-5">2500</div>
+              <div class="text-grey">total</div>
+            </div>
+
+            <div class="capitalize box text-center p-20 radius-10">
+              <i class="fa-solid fa-spinner fa-2x mb-10 text-blue"></i>
+              <div class="font-20 font-bold mt-5 mb-5">500</div>
+              <div class="text-grey">pending</div>
+            </div>
+
+            <div class="capitalize box text-center p-20 radius-10">
+              <i class="fa-regular fa-circle-check fa-2x mb-10 text-green"></i>
+              <div class="font-20 font-bold mt-5 mb-5">1900</div>
+              <div class="text-grey">closed</div>
+            </div>
+
+            <div class="capitalize box text-center p-20 radius-10">
+              <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 text-red"></i>
+              <div class="font-20 font-bold mt-5 mb-5">100</div>
+              <div class="text-grey">deleted</div>
+            </div>
+          </div>
+        </div>
+        <!-- end tickets -->
+        <!-- start news -->
+        <div class="news bg-white radius-10 p-20">
+          <div class="mb-10 ">
+            <h3 class="font-bold font-25 capitalize  mobile-center">latest news</h3>
+          </div>
+
+          <div class="new-row  mt-20 d-flex flex-wrap gap-20 align-items-center  ">
+            <img src="imgs/news-01.png" class="mr-20 " alt="">
+            <div class="new-info">
+              <h3 class=" capitalize">create tailwind section</h3>
+              <p class="text-grey mt-10 capitalize">new tailwind example & lessons</p>
+            </div>
+            <div class=" capitalize bg-eee btn label">
+              3 days ago
+            </div>
+          </div>
+
+          <div class="new-row  mt-20 d-flex flex-wrap gap-20 align-items-center  ">
+            <img src="imgs/news-02.png" class="mr-20 " alt="">
+            <div class="new-info">
+              <h3 class=" capitalize">create tailwind section</h3>
+              <p class="text-grey mt-10 capitalize">new tailwind example & lessons</p>
+            </div>
+            <div class=" capitalize bg-eee btn label">
+              5 days ago
+            </div>
+          </div>
+
+          <div class="new-row  mt-20 d-flex flex-wrap gap-20 align-items-center  ">
+            <img src="imgs/news-04.png" class="mr-20 " alt="">
+            <div class="new-info">
+              <h3 class=" capitalize">create tailwind section</h3>
+              <p class="text-grey mt-10 capitalize">new tailwind example & lessons</p>
+            </div>
+            <div class=" capitalize bg-eee btn label">
+              7 days ago
+            </div>
+          </div>
+
+          <div class="new-row  mt-20 pb-5 d-flex flex-wrap gap-20 align-items-center  ">
+            <img src="imgs/news-03.png" class="mr-20 " alt="">
+            <div class="new-info">
+              <h3 class=" capitalize">create tailwind section</h3>
+              <p class="text-grey mt-10 capitalize">new tailwind example & lessons</p>
+            </div>
+            <div class=" capitalize bg-eee btn label">
+              10 days ago
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- end news -->
+        <!-- start taskes -->
+        <div class="bg-white p-20 taskes radius-10">
+          <div class="mb-10 ">
+            <h3 class="font-bold font-25 capitalize  mobile-center">latest taskes</h3>
+          </div>
+
+          <div class="list mb-20 mt-20 d-flex align-items-center  justify-content-between ">
+            <div>
+              <p class="capitalize font-bold font-18 mb-15">learn new lesson</p>
+              <p class="text-grey capitalize">update my skills in javascript</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+
+          <div class="list mb-20 mt-20 d-flex align-items-center  justify-content-between ">
+            <div>
+              <p class="capitalize font-bold font-18 mb-15">learn new lesson</p>
+              <p class="text-grey capitalize">update my skills in javascript</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+
+          <div class="list  mb-20 mt-20 d-flex align-items-center  justify-content-between ">
+            <div>
+              <p class="capitalize font-bold font-18 mb-15 done">learn new lesson</p>
+              <p class="text-grey capitalize done">update my skills in javascript</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete text-grey "></i>
+          </div>
+
+          <div class="list mb-20 mt-20 d-flex align-items-center  justify-content-between ">
+            <div>
+              <p class="capitalize font-bold font-18 mb-15">learn new lesson</p>
+              <p class="text-grey capitalize">update my skills in javascript</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+        </div>
+        <!-- end taskes -->
+        <!-- start top search -->
+        <div class="top-search p-20 bg-white radius-10">
+          <div class="mb-10 ">
+            <h3 class="font-bold font-25 capitalize  mobile-center">top search items</h3>
+          </div>
+          <div class="d-flex justify-content-between mb-20 mt-20 ">
+            <h3 class="text-grey capitalize font-18">keywork</h3>
+            <h3 class="text-grey capitalize font-18">search count</h3>
+          </div>
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">javascript</p>
+            <p class="capitalize btn bg-eee font-18 ">200</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">next</p>
+            <p class="capitalize btn bg-eee font-18 ">100</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">react</p>
+            <p class="capitalize btn bg-eee font-18 ">200</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">desing</p>
+            <p class="capitalize btn bg-eee font-18 ">820</p>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">logic</p>
+            <p class="capitalize btn  radius-6 bg-eee font-18 ">10</p>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center  mb-20 mt-20 ">
+            <p class="capitalize font-20 ">tailwind</p>
+            <p class="capitalize btn  radius-6 bg-eee font-18 ">150</p>
+          </div>
+        </div>
+        <!-- end top search -->
+        <!-- start latest uploads -->
+        <div class="latest-uploads p-20 bg-white radius-10">
+          <div class="pb-5">
+            <h3 class="font-bold font-25 capitalize  mobile-center">latest uploads</h3>
+          </div>
+          <div class="info  d-flex  align-items-center  mb-10 mt-25">
+            <img src="imgs/pdf.svg" alt="">
+            <div class="img-info flex-1 ml-15">
+              <p class="mb-5">My-file.pdf</p>
+              <p class="text-grey">Hany</p>
+            </div>
+            <div class="btn bg-eee ">2.9mb</div>
+          </div>
+          <div class="info  d-flex  align-items-center  mb-10 mt-10">
+            <img src="imgs/dll.svg" alt="">
+            <div class="img-info flex-1 ml-15">
+              <p class="mb-5">My-file.pdf</p>
+              <p class="text-grey">employee</p>
+            </div>
+            <div class="btn bg-eee ">1.9mb</div>
+          </div>
+          <div class="info  d-flex  align-items-center  mb-10 mt-10">
+            <img src="imgs/psd.svg" alt="">
+            <div class="img-info flex-1 ml-15">
+              <p class="mb-5">My-file.pdf</p>
+              <p class="text-grey">user</p>
+            </div>
+            <div class="btn bg-eee ">1.2mb</div>
+          </div>
+          <div class="info  d-flex  align-items-center  mb-10 mt-10">
+            <img src="imgs/eps.svg" alt="">
+            <div class="img-info flex-1 ml-15">
+              <p class="mb-5">My-file.pdf</p>
+              <p class="text-grey">admin</p>
+            </div>
+            <div class="btn bg-eee ">24mb</div>
+          </div>
+          <div class="info  d-flex  align-items-center  mb-10 mt-10">
+            <img src="imgs/zip.svg" alt="">
+            <div class="img-info flex-1 ml-15">
+              <p class="mb-5">My-file.pdf</p>
+              <p class="text-grey">designer</p>
+            </div>
+            <div class="btn bg-eee ">29mb</div>
+          </div>
+        </div>
+        <!-- end latest uploads -->
+        <!-- start last project progress -->
+        <div class="last-progress p-20 bg-white radius-10">
+          <div class="pb-10">
+            <h3 class="font-bold font-25 capitalize  mobile-center">last project progress</h3>
+          </div>
+          <div class="ab p-relative">
+            <div class="info d-flex align-items-center mt-20  pb-10">
+              <span></span>
+              <p class="capitalize font-20 ml-15">got the project</p>
+            </div>
+            <div class="info d-flex align-items-center mt-20 pb-10 ">
+              <span></span>
+              <p class="capitalize font-20 ml-15">started the project</p>
+            </div>
+            <div class="info d-flex align-items-center mt-20 pb-10">
+              <span></span>
+              <p class="capitalize font-20 ml-15">the project become 80%</p>
+            </div>
+            <div class="info d-flex align-items-center mt-20 pb-10">
+              <span class="reload"></span>
+              <p class="capitalize font-20 ml-15">testing</p>
+            </div>
+            <div class="info d-flex align-items-center mt-20  ">
+              <span class="notyet"></span>
+              <p class="capitalize font-20 ml-15">finish & get menoy</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- end last project progress -->
+        <!-- start reminders -->
+        <div class="reminders p-20 bg-white radius-10">
+          <div class="pb-10">
+            <h3 class="font-bold font-25 capitalize  mobile-center">reminders</h3>
+          </div>
+          <div class="d-flex align-items-center mt-10 mb-20">
+            <span class="check1 text-center bg-blue "></span>
+            <div class="remender-info blue p-relative flex-1 ">
+              <p class="capitalize mb-15  font-20">check my tasks list</p>
+              <span class="text-grey ">28\2\2003 - 20:12am</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-10 mb-20">
+            <span class="check1 text-center bg-green "></span>
+            <div class="remender-info green p-relative">
+              <p class="capitalize font-20">check projects</p>
+              <p class="mt-15 text-grey ">28\2\2003 - 20:12am</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-10 mb-20">
+            <span class="check1 text-center bg-orange "></span>
+            <div class="remender-info orange p-relative">
+              <p class="capitalize font-20">available at</p>
+              <p class="mt-15 text-grey ">28\2\2003 - 20:12am</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-10 mb-20">
+            <span class="check1 text-center bg-red "></span>
+            <div class="remender-info red p-relative">
+              <p class="capitalize font-20">finish the developer</p>
+              <p class="mt-15 text-grey ">28\2\2003 - 20:12am</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- end reminders -->
+        <!-- start last post  -->
+        <div class="last-post p-20 bg-white radius-10">
+          <div class="pb-10">
+            <h3 class="font-bold font-25 capitalize  mobile-center">latest post</h3>
+          </div>
+          <div class="post-profile mb-20 mt-20 d-flex align-items-center">
+            <img src="imgs/avatar.png" alt="">
+            <div>
+              <h3 class="capitalize font-bold">hany mohamed</h3>
+              <p class="text-grey mt-10 capitalize ">about 2 days ago</p>
+            </div>
+          </div>
+          <p class="capitalize lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id rerum
+            laborum porro esse eaque error, aperiam amet dolor sit amet consectetur nihil?</p>
+          <div class=" d-flex justify-content-between mb-5 mt-25 align-items-center">
+            <div class="text-grey pointer">
+              <i class="fa-regular fa-heart"></i>
+              <span>200k</span>
+            </div>
+            <div class="text-grey pointer">
+              <i class="fa-regular fa-comments"></i>
+              <span>200k</span>
+            </div>
+          </div>
+        </div>
+        <!-- end last post  -->
+        <!-- start social media state -->
+        <div class="social-media  p-20 bg-white radius-10 ">
+          <div class="pb-10">
+            <h3 class="font-bold font-25 capitalize  mobile-center">social media state</h3>
+          </div>
+          <div class="twitter mt-10 mb-10 d-flex align-items-center ">
+            <i class="fa-brands   fa-twitter fa-2x text-white  p-10"></i>
+            <div class="twiter-info d-flex  align-items-center  justify-content-between p-10 flex-1 ">
+              <p class="ml-10">90k followers </p>
+              <a class="font-13 text-white btn" href="#">Follow</a>
+            </div>
+          </div>
+
+          <div class="facebook mt-10 mb-10 d-flex align-items-center ">
+            <i class="fa-brands fa-facebook-f fa-2x text-white p-10 text-center  "></i>
+            <div class="facebook-info d-flex  align-items-center  justify-content-between p-10 flex-1 ">
+              <p class="ml-10">90k followers </p>
+              <a class="font-13 text-white btn" href="#">Follow</a>
+            </div>
+          </div>
+          <div class="youtube mt-10 mb-10 d-flex align-items-center ">
+            <i class="fa-brands fa-youtube fa-2x text-white text-center  p-10 "></i>
+            <div class="youtube-info d-flex  align-items-center  justify-content-between p-10 flex-1 ">
+              <p class="ml-10">90k followers </p>
+              <a class="font-13 text-white btn" href="#">Subscribe</a>
+            </div>
+          </div>
+          <div class="linkedin mt-10 mb-10 d-flex align-items-center ">
+            <i class="fa-brands fa-linkedin fa-2x text-white p-10"></i>
+            <div class="linkedin-info d-flex  align-items-center  justify-content-between p-10 flex-1 ">
+              <p class="ml-10">90k followers </p>
+              <a class="font-13 text-white btn" href="#">Follow</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- end social media state -->
+      </div>
+      <!-- end category -->
+      <!-- start projects -->
+      <div class="projects   p-20 bg-white radius-10 ">
+        <div class="pb-5">
+          <h3 class="font-bold font-25 capitalize  mobile-center">projects</h3>
+        </div>
+        <div class="responseve-table mt-20">
+          <table class=" w-full">
+            <thead>
+              <tr class="font-18">
+                <td>Name</hd>
+                <td>Finish Date</hd>
+                <td>Client</hd>
+                <td>Price</hd>
+                <td>Team</hd>
+                <td>Status</hd>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Minstry mohamed</td>
+                <td>10 may 9090</td>
+                <td>ahmed</td>
+                <td>$8900</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="">
+                  <img src="imgs/team-02.png" alt="">
+                  <img src="imgs/team-03.png" alt="">
+                  <img src="imgs/team-04.png" alt="">
+                </td>
+                <td class=" ">
+                  <span class="btn bg-orange text-white  ">pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Minstry mohamed</td>
+                <td>10 may 9090</td>
+                <td>ahmed</td>
+                <td>$8900</td>
+                <td>
+                  <img src="imgs/team-02.png" alt="">
+                  <img src="imgs/team-03.png" alt="">
+                  <img src="imgs/team-04.png" alt="">
+                </td>
+                <td class=" ">
+                  <span class="btn bg-green text-white  ">pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Minstry mohamed</td>
+                <td>10 may 9090</td>
+                <td>ahmed</td>
+                <td>$900</td>
+                <td>
+
+                  <img src="imgs/team-04.png" alt="">
+                </td>
+                <td class=" ">
+                  <span class="btn bg-blue text-white  ">pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>saad eldean</td>
+                <td>10 may 9090</td>
+                <td>ahmed</td>
+                <td>$8900</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="">
+                  <img src="imgs/team-02.png" alt="">
+
+                </td>
+                <td class=" ">
+                  <span class="btn bg-red text-white  ">pending</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+
+
+
+      </div>
+      <!-- end projects -->
+    </div>
+  </div>
+  <!-- end category -->
+  <!-- end  content -->
+</body>
+
+</html>
